@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+    
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+:root {
+  --orange: #ff7f50;
+  --blue: #0066cc;
+  --light-blue: #87ceeb;
+  --dark-blue: #003d66;
+  --gradient: linear-gradient(135deg, var(--orange), var(--blue));
+  --text-color: #333;
+  --light-color: #666;
+  --bg-color: #f8f9fa;
+  --white: #fff;
+  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+section {
+  padding: 8rem 9%;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  background: var(--gradient);
+  color: var(--white);
+  font-size: 1.7rem;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  transform: translateY(-0.3rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading h1 {
+  font-size: 4rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.heading p {
+  font-size: 1.6rem;
+  color: var(--light-color);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--light-blue);
+  padding: 1rem 9%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+header .logo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--blue);
+}
+
+header .logo span {
+  color: var(--dark-blue);
+}
+
+header .navbar a {
+  color: var(--black);
+  font-size: 1.6rem;
+  margin: 0 1rem;
+  position: relative;
+}
+
+header .navbar a::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  width: 0;
+  height: 0.2rem;
+  background: var(--dark-blue);
+  transition: width 0.3s ease;
+}
+
+header .navbar a:hover::after,
+header .navbar a:active::after
+ {
+  width: 100%;
+}
+
+.navbar a:hover,
+.navbar a.active{
+  color: var(--dark-blue);
+  font-weight: 700;
+}
+
+header .icons i {
+  cursor: pointer;
+  font-size: 2.5rem;
+  color: var(--text-color);
+  margin-left: 2rem;
+}
+
+header .icons i:hover {
+  color: var(--orange);
+}
+
+.book {
+  background: var(--light-blue);
+  padding: 4rem 2rem;
+}
+
+.book .heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.book-image {
+  flex: 1 1 40%;
+}
+
+.book-image img {
+  width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(12, 58, 184, 0.1);
+}
+
+.book-form {
+  flex: 1 1 45%;
+  background: var(--bg-color);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(9, 12, 170, 0.1);
+}
+
+.book-form .form-group {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-form .form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.book-form .form-group input,
+.book-form .form-group select {
+  padding: 0.9rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: var(--border);
+  background: var(--white);
+}
+
+.book-form .form-group input:focus,
+.book-form .form-group select:focus {
+  border-color: var(--dark-blue);
+  outline:#0056b3;
+}
+
+.submit-btn {
+  padding: 1rem 2rem;
+  background: var(--dark-blue);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: var(--dark-blue);
+}
+
+#totalDisplay {
+  margin-top: 20px;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #2c3e50;
+  background-color: #ecf0f1;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  text-align: center;
+  width: fit-content;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

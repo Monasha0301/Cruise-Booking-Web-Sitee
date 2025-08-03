@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cruise Tour Booking System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <a href="#" class="logo"><span>C</span>ruise<span>T</span>ours</a>
+    <nav class="navbar">
+      <a href="#home" class="active">Home</a>
+      <a href="book.html">Book</a>
+      <a href="packages.html">Packages</a>
+      <a href="services.html">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+      <a href="sign-up.html" id="sign-up"><i class="fas fa-user"></i>Sign-Up</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+  </header>
+
+  <section class="home" id="home">
+    <div class="content">
+      <h3>Adventure Awaits at Sea!</h3>
+      <p>Discover breathtaking destinations, luxury accommodations, and unforgettable experiences on the world's finest cruise ships.</p>
+      <a href="#book" class="btn">Book Your Adventure</a>
+    </div>
+
+    <div class="controls">
+      <span class="vid-btn active" data-src="../Videos/V1.mp4"></span>
+      <span class="vid-btn" data-src="../Videos/V2.mp4"></span>
+      <span class="vid-btn" data-src="../Videos/V3.mp4"></span>
+      <span class="vid-btn" data-src="../Videos/V4.mp4"></span>
+      <span class="vid-btn" data-src="../Videos/V5.mp4"></span>
+    </div>
+
+    <div class="video-container">
+      <video class="video-slide" id="video-slider" autoplay muted loop playsinline>
+        <source src="../Videos/V1.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+
+  <section class="gallery" id="gallery">
+  <div class="heading">
+    <h1>Gallery of our Tours</h1>
+    <p>Browse through our stunning gallery and relive the magical moments from our unforgettable cruise tours across the world’s most breathtaking destinations.</p>
+  </div>
+  <div id="packages-container" class="packages-section"></div>
+
+  <div class="box-container" id="gallery-box-container"></div>
+
+<section class="reviews" id="reviews">
+  <div class="heading">
+    <h1 class="section-title">What Our Guests Say</h1>
+    <p class="section-subtitle">Discover why thousands choose our cruise experiences</p>
+  </div>
+  <div class="reviews-grid">
+    <div class="review-card floating">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">“We cruised with grandparents, kids, and teens—and everyone had a great time! Activities ranged from bingo to rock climbing, and the shows were family-friendly and fun. Truly an all-ages vacation!”</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">SM</div>
+        <div class="reviewer-details">
+          <h4>Sarah</h4>
+          <p>Caribbean Adventure • March 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card floating" style="animation-delay: 0.5s">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">"As a solo traveler, I felt completely safe and welcomed. The crew was attentive, and I met fellow travelers during events and excursions. The cruise gave me the perfect mix of relaxation and adventure.”</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">EM</div>
+        <div class="reviewer-details">
+          <h4>Emma</h4>
+          <p>Mediterranean Explorer • February 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card floating" style="animation-delay: 1s">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">"Our family cruise was an unforgettable experience! The kids loved the onboard water park and activities, while we enjoyed relaxing on the deck with ocean views. The staff was incredibly helpful and the food exceeded our expectations. Can’t wait to sail again!"</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">JL</div>
+        <div class="reviewer-details">
+          <h4>Mike</h4>
+          <p>Alaska Wilderness • January 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card floating" style="animation-delay: 1s">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">"My partner and I booked a balcony suite for our anniversary, and it was pure bliss. Watching the sunset from our private deck was magical. From fine dining to shore excursions, every moment felt luxurious."</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">JL</div>
+        <div class="reviewer-details">
+          <h4>James</h4>
+          <p>Alaska Wilderness • January 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card floating" style="animation-delay: 1s">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">"I was nervous about cruising for the first time, but everything was so smooth and well-organized. The excursions were well-planned, the entertainment onboard was top-notch, and the cabins were surprisingly spacious. Highly recommended!"</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">JL</div>
+        <div class="reviewer-details">
+          <h4>Linda</h4>
+          <p>Alaska Wilderness • January 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card floating" style="animation-delay: 1s">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">"We went as a group of 12 friends and had a blast! Plenty of activities to suit everyone—spa, nightlife, sports, and quiet spots to unwind. Booking and boarding were hassle-free, and the crew went out of their way to make it special."</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">JL</div>
+        <div class="reviewer-details">
+          <h4>Elena</h4>
+          <p>Alaska Wilderness • January 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card floating" style="animation-delay: 1s">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">"Cruising through the Mediterranean was like living a dream. Each stop had its own charm—history, culture, food! The guided tours were insightful and well-timed. Loved waking up to a new city every day."</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">JL</div>
+        <div class="reviewer-details">
+          <h4>Damon</h4>
+          <p>Alaska Wilderness • January 2025</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="review-card floating" style="animation-delay: 1.5s">
+      <div class="stars">
+        <span class="star" style="--i: 1">★</span>
+        <span class="star" style="--i: 2">★</span>
+        <span class="star" style="--i: 3">★</span>
+        <span class="star" style="--i: 4">★</span>
+        <span class="star" style="--i: 5">★</span>
+      </div>
+      <p class="review-text">"The cruise was pure luxury—from the elegant dining rooms to the world-class spa. Our suite was immaculate, and the concierge service was fantastic. Worth every penny for a premium experience!"</p>
+      <div class="reviewer-info">
+        <div class="reviewer-avatar">AR</div>
+        <div class="reviewer-details">
+          <h4>Alex</h4>
+          <p>Romantic Getaway • December 2024</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="heading">
+    <h1 class="section-title">Get In Touch</h1>
+    <p class="section-subtitle">Ready to plan your dream cruise? We're here to help!</p>
+  </div>
+    <div class="contact-grid">
+      <div class="contact-form">
+        <h2>Send us a Message</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <div class="form-group">
+            <label for="cruise-interest">Cruise Interest</label>
+            <select id="cruise-interest" name="cruise-interest">
+              <option value="">Select a cruise destination</option>
+              <option value="caribbean">Caribbean</option>
+              <option value="mediterranean">Mediterranean</option>
+              <option value="alaska">Alaska</option>
+              <option value="norway">Norwegian Fjords</option>
+              <option value="asia">Asia</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Tell us about your dream cruise..." required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <div class="contact-card floating">
+          <div class="contact-icon">📞</div>
+          <h3>Call Us</h3>
+          <p>+94 555 486 123-CRUISE<br>Available 24/7</p>
+        </div>
+
+        <div class="contact-card floating" style="animation-delay: 0.3s">
+          <div class="contact-icon">✉️</div>
+          <h3>Email Us</h3>
+          <p>info@cruisetours.com<br>Response within 2 hours</p>
+        </div>
+
+        <div class="contact-card floating" style="animation-delay: 0.6s">
+          <div class="contact-icon">📍</div>
+          <h3>Visit Us</h3>
+          <p>123 Ocean Drive<br>Colombo 07</p>
+        </div>
+
+        <div class="contact-card floating" style="animation-delay: 0.9s">
+          <div class="contact-icon">💬</div>
+          <h3>Live Chat</h3>
+          <p>Chat with our experts<br>Mon–Sun 8AM–10PM EST</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+  <div class="footer-section">
+    <h3>About Us</h3> class="s-icon"
+    <p>We offer world-class cruise experiences with unforgettable destinations and luxury services on board.</p>
+  </div>
+
+  <div class="footer-section">
+    <h3>Quick Links</h3>
+      <a class="link" href="#home">Home</a><br>
+      <a class="link" href="packages.html">Packages</a><br>
+      <a class="link" href="services.html">Services</a><br>
+      <a class="link" href="#gallery">Gallery</a><br>
+      <a class="link" href="#contact">Contact</a><br>
+  </div>
+
+  <div class="footer-section">
+    <h3>Contact Info</h3>
+    <p><i class="fas fa-map-marker-alt"></i> 123 Ocean Drive, Cruise City</p>
+    <p><i class="fas fa-phone"></i> +94 234 567 890</p>
+    <p><i class="fas fa-envelope"></i> info@cruisetour.com</p>
+  </div>
+
+  <div class="footer-section">
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+      <a class="s-icon" href="#"><i class="fab fa-facebook-f"></i></a>
+      <a class="s-icon" href="#"><i class="fab fa-twitter"></i></a>
+      <a class="s-icon" href="#"><i class="fab fa-instagram"></i></a>
+      <a class="s-icon" href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+  </div>
+</footer>
+
+  <script src="../JS/gallery.js"></script>
+  <script src="../JS/main.js"></script>
+</body>
+</html>

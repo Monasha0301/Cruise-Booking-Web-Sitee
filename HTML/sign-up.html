@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cruise Tour Booking System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/signup.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <header>
+    <a href="#" class="logo"><span>C</span>ruise<span>T</span>ours</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="book.html">Book</a>
+      <a href="packages.html">Packages</a>
+      <a href="services.html">Services</a>
+      <a href="index.html">Gallery</a>
+      <a href="index.html">Review</a>
+      <a href="index.html">Contact</a>
+      <a href="sign-up.html" id="sign-up" class="active"><i class="fas fa-user"></i> Sign-Up</a>
+    </nav>
+    
+  </header>
+
+  <div class="login-form-container" id="signup-form">
+    <i class="fas fa-times" onclick="closeForms()"></i>
+    <form id="signup-form" onsubmit="handleSignup(event)">
+
+      <h3>Sign Up</h3>
+      <input type="text" id="signup-username" class="box" placeholder="Enter your name" required>
+      <input type="email" class="box" placeholder="Enter your email" required>
+      <input type="password" id="signup-password" class="box" placeholder="Create password" required>
+      <input type="password" class="box" placeholder="Confirm password" required>
+      <input type="submit" class="btn" value="Sign Up Now">
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </form>
+  </div>
+  
+
+  <script src="../JS/logSign.js"></script>
+</body>
+</html>

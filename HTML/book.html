@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cruise Tour Booking System</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/book.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"><span>C</span>ruise<span>T</span>ours</a>
+    <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="book.html" class="active">Book</a>
+      <a href="packages.html">Packages</a>
+      <a href="services.html">Services</a>
+      <a href="index.html">Gallery</a>
+      <a href="index.html">Review</a>
+      <a href="index.html">Contact</a>
+      <a href="sign-up.html" id="sign-up"><i class="fas fa-user"></i>Sign-Up</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+
+  </header>
+
+  <br><br><br><br><br>
+
+  <section id="book" class="book">
+    <div class="heading">
+      <h1>Book Your Cruise</h1>
+      <p>Plan your perfect getaway with us...</p>
+    </div>
+
+    <div class="book-grid">
+      <div class="book-image">
+        <img src="../Images/Book.jpg" alt="Cruise Ship">
+      </div>
+
+      <form id="booking-form" class="book-form">
+        <div class="form-group">
+          <label>Where to?</label>
+          <select name="destination" id="destination" required>
+            <option value="">Select Package</option>
+            <option value="Caribbean">Caribbean</option>
+            <option value="Mediterranean">Mediterranean</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Norwegian Fjords">Norwegian Fjords</option>
+            <option value="Bahamas">Bahamas</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Thailand">Thailand</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>How many?</label>
+          <select name="guests" id="guests" required>
+            <option value="">Select Guests</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5+ Guests</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Select room</label>
+          <select name="rooms" id="rooms" required>
+            <option value="">Select Room</option>
+            <option value="1">1 Room</option>
+            <option value="2">2 Rooms</option>
+            <option value="3">3 Rooms</option>
+            <option value="4">4 Rooms</option>
+            <option value="5">5+ Rooms</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Cabin Type</label>
+          <select name="cabin" id="cabin" required>
+            <option value="">Select Cabin</option>
+            <option value="Interior">Interior</option>
+            <option value="Ocean View">Ocean View</option>
+            <option value="Balcony">Balcony</option>
+            <option value="Suite">Suite</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Special Requests</label>
+          <input type="text" name="requests" id="requests" placeholder="Any special requests?">
+        </div>
+
+        <button type="submit" class="submit-btn" onclick="calculateTotal()">Book Now</button>
+      </form>
+
+      <div id="totalDisplay" class="form-group" style="margin-top: 20px; font-weight: bold; font-size: 18px; color: #2c3e50;">
+      </div>
+    </div>
+  </section>
+
+  <script src="..//JS/book.js"></script>
+</body>
+</html>
